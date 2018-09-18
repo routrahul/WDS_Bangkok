@@ -167,12 +167,12 @@
           </section>
 
           <section class="fullscreen bg-apple aligncenter slide current" id="section-31" style="padding:0;">
-              <div class="wrap size-50">
-              </div>
-               <iframe src="http://localhost:5000" style="height:800px;"></iframe>
-              </div><!-- .embed -->
-              <!-- .wrap = container (width: 90%) -->
-            </section>
+            <div class="wrap size-50">
+            </div>
+              <iframe src="http://localhost:5000" style="height:800px;"></iframe>
+            </div><!-- .embed -->
+            <!-- .wrap = container (width: 90%) -->
+          </section>
 
           <section class="bg-apple aligncenter">
             <span class="background dark" style="background-image:url('../static/images/talk/D3.png')"></span>
@@ -385,14 +385,51 @@
             <section class="fullscreen bg-apple aligncenter slide current" id="section-31" style="padding:0;">
               <div class="wrap size-50">
               </div>
-            
-              <div id="performanceChart" style="height:700px;width:800px;"></div>
-              <!-- <h1><a href="https://beta.observablehq.com/@routrahul/performance-test" location="">Performance Checks Please</a></h1>  -->
+              <!-- <div id="performanceChart" style="height:700px;width:800px;"></div> -->
+              <h1><a href="https://beta.observablehq.com/@routrahul/performance-test/2" target="_blank">Performance Checks Please</a></h1> 
+            </section>
+
+            <section class="fullscreen bg-apple aligncenter slide current" id="section-31" style="padding:0;">
+              <div class="wrap size-50">
+              </div>
+                <iframe src="http://localhost:5001/" style="height:800px;"></iframe>
+              </div><!-- .embed -->
               <!-- .wrap = container (width: 90%) -->
             </section>
 
-        
+            <section class="bg-apple slide current" id="section-23" style="">
+                <div class="wrap">
+                  <div class="content-center">
+                       <img class="alignleft" src="../static/images/talk/howtoscale.png" style="margin-left:0;"/>
+                  </div>
+                </div>
+                <!-- .end .wrap -->
+              </section>
 
+              <section class="bg-apple slide current">
+                <div class="wrap">
+                  <!-- [class*="content-"] = container max-width:50% = 600px -->
+                  <div class="content-center">
+                    <h3>Visualization Techniques</h3>
+                    <h3>Server Rendered SVG’s</h3>
+                    <h3>Canvas based Visualizations</h3>
+                  </div>
+                </div>
+              </section>
+              <section class="bg-apple slide current">
+                  <div class="wrap">
+                    <!-- [class*="content-"] = container max-width:50% = 600px -->
+                    <div class="content-center">
+                      <strike><h3>Visualization Techniques</h3></strike>
+                      <h3>Server Rendered SVG’s</h3>
+                      <h3>Canvas based Visualizations</h3>
+                    </div>
+                  </div>
+                </section>
+              
+
+        
+            
         
 
         <section class="bg-apple aligncenter">
@@ -408,20 +445,20 @@
     </script>
 
     <script type="module">
-      import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
+    //   import {Runtime, Inspector} from "https://unpkg.com/@observablehq/notebook-runtime?module";
 
-      import notebook from "https://api.observablehq.com/@routrahul/performance-test.js";
+    //   import notebook from "https://api.observablehq.com/@routrahul/performance-test.js";
 
-      Runtime.load(notebook, (cell) => {
-        if (cell.name === "chart") {
-          return {
-            fulfilled: (value) => {
-              document.getElementById("performanceChart").appendChild(value);
-            }
-          };
-        }
-      });
-    </script>
+    //   Runtime.load(notebook, (cell) => {
+    //     if (cell.name === "chart") {
+    //       return {
+    //         fulfilled: (value) => {
+    //           document.getElementById("performanceChart").appendChild(value);
+    //         }
+    //       };
+    //     }
+    //   });
+     </script>
 
     <script defer src="../static/js/svg-icons.js"></script>
 
