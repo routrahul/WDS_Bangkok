@@ -398,39 +398,138 @@
             </section>
 
             <section class="bg-apple slide current" id="section-23" style="">
-                <div class="wrap">
-                  <div class="content-center">
-                       <img class="alignleft" src="../static/images/talk/howtoscale.png" style="margin-left:0;"/>
-                  </div>
+              <div class="wrap">
+                <div class="content-center">
+                      <img class="alignleft" src="../static/images/talk/howtoscale.png" style="margin-left:0;"/>
                 </div>
-                <!-- .end .wrap -->
-              </section>
+              </div>
+              <!-- .end .wrap -->
+            </section>
 
-              <section class="bg-apple slide current">
-                <div class="wrap">
-                  <!-- [class*="content-"] = container max-width:50% = 600px -->
-                  <div class="content-center">
-                    <h3>Visualization Techniques</h3>
-                    <h3>Server Rendered SVG’s</h3>
-                    <h3>Canvas based Visualizations</h3>
-                  </div>
+            <section class="bg-apple slide current">
+              <div class="wrap">
+                <!-- [class*="content-"] = container max-width:50% = 600px -->
+                <div class="content-center">
+                  <h3>Visualization Techniques</h3>
+                  <h3>Server Rendered SVG’s</h3>
+                  <h3>Canvas based Visualizations</h3>
                 </div>
-              </section>
-              <section class="bg-apple slide current">
+              </div>
+            </section>
+            <section class="bg-apple slide current">
+              <div class="wrap">
+                <!-- [class*="content-"] = container max-width:50% = 600px -->
+                <div class="content-center">
+                  <strike><h3>Visualization Techniques</h3></strike>
+                  <h3>Server Rendered SVG’s</h3>
+                  <h3>Canvas based Visualizations</h3>
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-apple aligncenter">
+              <span class="background dark" style="background-image:url('../static/images/talk/svg.png'); opacity:0.2;"></span>
+              <div class="wrap">
+                <h2 class="text-data">Server Rendered SVG</h2>
+              </div>
+            </section>
+
+            <section class="bg-apple slide">
+              <div class="wrap">
+                <div class="content-center">
+                  <h3>Server Rendered SVG</h3>
+                  <p style="margin-top:50px;">SVG generation done on a server and sent to the client for rendering</p>
+                  <p style="">Multiple tasks done on the server like SVG layout calculation, path generation and shapes generation etc</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="fullscreen bg-apple aligncenter slide current" id="section-31" style="padding:0;">
+              <div class="wrap size-50">
+              </div>
+                <iframe src="http://localhost:3000" style="height:800px;"></iframe>
+              </div>
+            </section>
+
+            <section class="bg-apple aligncenter">
+              <span class="background dark" style="background-image:url('../static/images/talk/canvas_network.png'); opacity:0.2;"></span>
+              <div class="wrap">
+                <h2 class="text-data">Canvas Based Visualizations</h2>
+              </div>
+            </section>
+
+            <section class="bg-apple slide">
+              <span class="background dark" style="background-image:url('../static/images/talk/canvas_network.png'); opacity:0.2;"></span>
+              <div class="wrap">
+                <div class="content-center">
+                  <h3>Canvas Based Visualizations</h3>
+                  <p style="margin-top:50px;">The developer works out the commands to draw objects, create the model or scene</p>
+                  <p>Takes care of the updating</p>
+                  <p>The browser’s Graphics API communicates these drawing commands, browser simply executes them</p>
+                  <p>You draw your pixels and the system forgets all about them thus, cutting down on the extra memory needed  to maintain an internal model</p>
+                </div>
+              </div>
+            </section>
+            <section class="fullscreen bg-apple aligncenter slide current" id="section-31" style="padding:0;">
+              <div class="wrap size-50">
+              </div>
+                <iframe src="http://localhost:3011" style="height:800px;"></iframe>
+              </div>
+            </section>
+
+            <section class="bg-apple slide current" id="section-23" style="">
+              <div class="wrap">
+                <div class="content-center">
+                      <img class="alignleft" src="../static/images/talk/canvas_perf1.png" style="margin-left:0;"/>
+                </div>
+              </div>
+              <footer class="bg-trans-dark">
                   <div class="wrap">
-                    <!-- [class*="content-"] = container max-width:50% = 600px -->
-                    <div class="content-center">
-                      <strike><h3>Visualization Techniques</h3></strike>
-                      <h3>Server Rendered SVG’s</h3>
-                      <h3>Canvas based Visualizations</h3>
-                    </div>
+                    <p>
+                      <span class="alignleft">
+                          <a href="http://smus.com/canvas-vs-svg-performance/">Reference: smus.com</a>
+                      </span>
+                    </p>
                   </div>
-                </section>
-              
+                </footer>
+            </section>
 
+            <section class="bg-apple slide current" id="section-23" style="">
+              <div class="wrap">
+                <div class="content-center">
+                      <img class="alignleft" src="../static/images/talk/canvas_perf2.png" style="margin-left:0;"/>
+                </div>
+              </div>
+              <footer class="bg-trans-dark">
+                  <div class="wrap">
+                    <p>
+                      <span class="alignleft">
+                          <a href="http://smus.com/canvas-vs-svg-performance/">Reference: smus.com</a>
+                      </span>
+                    </p>
+                  </div>
+                </footer>
+            </section>
+
+            <section class="bg-apple aligncenter">
+              <span class="background dark" style="background-image:url('../static/images/gif/webgl.gif');opacity:0.4;"></span>
+              <div class="wrap">
+                <h2 class="text-data">WebGL based Visualizations</h2>
+              </div>
+            </section>
         
-            
-        
+            <section class="bg-apple slide">
+              <span class="background dark" style="background-image:url('../static/images/talk/webgl.jpg'); opacity:0.2;"></span>
+              <div class="wrap">
+                <div class="content-center">
+                  <h1>WebGL based Visualizations</h1>
+                  <p style="margin-top:50px;">Enables web content to use an API based on OpenGL to perform 2D and 3D rendering in an HTML canvas</p>
+                  <p>Programs consist of control code written in Javascript and shader code which is executed  on a computer’s GPU</p>
+                  <p>WebGL elements can be mixed with other HTML elements and can be composited with other parts of the page or backgrounds</p>
+                  <p><a href="https://beta.observablehq.com/@routrahul/webgl-first" target="_blank">WebGL First</a></p>
+                </div>
+              </div>
+            </section>
 
         <section class="bg-apple aligncenter">
           <h3><strong>Thank you!</strong></h2>
